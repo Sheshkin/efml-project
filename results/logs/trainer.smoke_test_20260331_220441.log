@@ -1,0 +1,9 @@
+2026-03-31 22:04:41 [trainer.smoke_test] INFO: Starting training for 3 epochs on mps
+2026-03-31 22:04:41 [trainer.smoke_test] INFO: Parameters: 13,391,361
+2026-03-31 22:07:04 [trainer.smoke_test] INFO: Epoch   1/3 | loss=0.4350 | val_loss=0.3586 | dice=0.7403 | iou=0.6107 | lr=9.99e-05 | 142.8s
+2026-03-31 22:07:04 [trainer.smoke_test] INFO:   → New best Dice: 0.7403 (saved)
+2026-04-01 02:10:36 [trainer.smoke_test] INFO: Epoch   2/3 | loss=0.3174 | val_loss=0.2694 | dice=0.7994 | iou=0.6825 | lr=9.96e-05 | 14612.1s
+2026-04-01 02:10:36 [trainer.smoke_test] INFO:   → New best Dice: 0.7994 (saved)
+2026-04-01 06:11:48 [trainer.smoke_test] INFO: Epoch   3/3 | loss=0.2784 | val_loss=0.2305 | dice=0.8293 | iou=0.7222 | lr=9.91e-05 | 14471.7s
+2026-04-01 06:11:48 [trainer.smoke_test] INFO:   → New best Dice: 0.8293 (saved)
+2026-04-01 06:11:49 [trainer.smoke_test] INFO: Training complete. Best Dice: 0.8293

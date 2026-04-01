@@ -1,0 +1,20 @@
+2026-04-01 20:53:33 [baseline_benchmark] INFO: Running baseline benchmark | device=mps | precision=fp16
+2026-04-01 20:53:34 [baseline_benchmark] INFO: Evaluating quality...
+2026-04-01 20:54:41 [baseline_benchmark] INFO: Dice=0.8227 | IoU=0.7157 | PixAcc=0.9028
+2026-04-01 20:54:41 [baseline_benchmark] INFO: Running latency benchmark (bs=1)...
+2026-04-01 20:54:52 [baseline_benchmark] INFO: Baseline result: {
+  "method": "Baseline FP16",
+  "precision": "fp16",
+  "device": "mps",
+  "model_size_mb": 26.782722,
+  "p50_latency_ms": 13.837750000107008,
+  "p95_latency_ms": 20.65652645009095,
+  "mean_latency_ms": 14.694066619990735,
+  "throughput_img_sec": 47.51647355303488,
+  "batch_size": 16,
+  "dice": 0.8227040683262229,
+  "iou": 0.7156934527140557,
+  "pixel_accuracy": 0.9027969959254878,
+  "memory_allocated_mb": 41.776896,
+  "memory_peak_mb": 41.776896
+}
