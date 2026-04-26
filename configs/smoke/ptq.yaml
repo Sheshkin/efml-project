@@ -1,0 +1,31 @@
+experiment_name: smoke_ptq
+
+data:
+  root: ./data
+  image_size: 64
+  batch_size: 2
+  val_fraction: 0.2
+  num_workers: 0
+  seed: 42
+  train_max_samples: 8
+  val_max_samples: 4
+  test_max_samples: 6
+
+model:
+  checkpoint: results/smoke/checkpoints/best_model.pt
+  base_filters: 16
+  bilinear: true
+
+benchmark:
+  warmup_runs: 2
+  latency_runs: 4
+  batch_size_throughput: 2
+  input_size: [64, 64]
+
+ptq:
+  calibration_batches: 2
+  force_dynamic: false
+  seed: 42
+
+paths:
+  output_dir: results/smoke

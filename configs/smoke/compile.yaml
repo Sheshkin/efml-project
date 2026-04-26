@@ -1,0 +1,27 @@
+experiment_name: smoke_compile
+
+data:
+  root: ./data
+  image_size: 64
+  batch_size: 2
+  num_workers: 0
+  seed: 42
+  test_max_samples: 6
+
+model:
+  checkpoint: results/smoke/checkpoints/best_model.pt
+  base_filters: 16
+  bilinear: true
+
+compile:
+  mode: reduce-overhead
+
+benchmark:
+  precision: fp16
+  warmup_runs: 2
+  latency_runs: 4
+  batch_size_throughput: 2
+  input_size: [64, 64]
+
+paths:
+  output_dir: results/smoke

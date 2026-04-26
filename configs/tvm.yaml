@@ -1,0 +1,24 @@
+# TVM benchmark configuration
+# NOTE: current TVM path compiles static input shape, so batch_size is fixed to 1.
+experiment_name: tvm_relax
+
+data:
+  root: ./data
+  image_size: 256
+  batch_size: 1
+  num_workers: 0
+
+model:
+  checkpoint: results/checkpoints/best_model.pt
+  base_filters: 64
+  bilinear: true
+
+benchmark:
+  warmup_runs: 20
+  latency_runs: 100
+  batch_size_throughput: 1
+  input_size: [256, 256]
+  seed: 42
+
+paths:
+  output_dir: results

@@ -1,0 +1,24 @@
+experiment_name: smoke_tvm
+
+data:
+  root: ./data
+  image_size: 64
+  batch_size: 1
+  num_workers: 0
+  seed: 42
+  test_max_samples: 4
+
+model:
+  checkpoint: results/smoke/checkpoints/best_model.pt
+  base_filters: 16
+  bilinear: true
+
+benchmark:
+  warmup_runs: 1
+  latency_runs: 2
+  batch_size_throughput: 1
+  input_size: [64, 64]
+  seed: 42
+
+paths:
+  output_dir: results/smoke

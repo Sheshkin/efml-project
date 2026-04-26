@@ -1,0 +1,25 @@
+experiment_name: smoke_train
+
+data:
+  root: ./data
+  image_size: 64
+  batch_size: 2
+  val_fraction: 0.2
+  num_workers: 0
+  seed: 42
+  train_max_samples: 12
+  val_max_samples: 4
+
+model:
+  base_filters: 16
+  bilinear: true
+
+training:
+  epochs: 1
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  seed: 42
+
+paths:
+  checkpoint_dir: results/smoke/checkpoints
+  log_dir: results/smoke/logs

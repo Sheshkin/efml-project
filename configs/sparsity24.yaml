@@ -1,0 +1,32 @@
+# 2:4 semi-structured sparsity configuration
+experiment_name: sparsity_2_4
+
+data:
+  root: ./data
+  image_size: 256
+  batch_size: 8
+  val_fraction: 0.15
+  num_workers: 0
+  seed: 42
+
+model:
+  checkpoint: results/checkpoints/best_model.pt
+  base_filters: 64
+  bilinear: true
+
+benchmark:
+  precision: fp16
+  warmup_runs: 20
+  latency_runs: 100
+  batch_size_throughput: 16
+  input_size: [256, 256]
+
+sparsity24:
+  finetune_epochs: 2
+  finetune_lr: 5.0e-5
+  finetune_weight_decay: 1.0e-5
+  max_finetune_batches: 100
+  seed: 42
+
+paths:
+  output_dir: results

@@ -1,0 +1,29 @@
+# Post-Training Quantization (PTQ) configuration
+experiment_name: ptq_int8
+
+data:
+  root: ./data
+  image_size: 256
+  batch_size: 8
+  val_fraction: 0.15
+  num_workers: 0
+  seed: 42
+
+model:
+  checkpoint: results/checkpoints/best_model.pt
+  base_filters: 64
+  bilinear: true
+
+benchmark:
+  warmup_runs: 20
+  latency_runs: 100
+  batch_size_throughput: 16
+  input_size: [256, 256]
+
+ptq:
+  calibration_batches: 32
+  force_dynamic: false
+  seed: 42
+
+paths:
+  output_dir: results
