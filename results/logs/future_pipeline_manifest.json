@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-04-26T16:56:29",
+  "continue_on_error": true,
+  "output_dir": "results/v100",
+  "runs": [
+    {
+      "command": "baseline",
+      "status": "ok",
+      "result_file": "baseline_result.json"
+    },
+    {
+      "command": "compile",
+      "status": "ok",
+      "result_file": "compile_result.json"
+    },
+    {
+      "command": "backend",
+      "status": "ok",
+      "result_file": "backend_result.json"
+    },
+    {
+      "command": "ptq",
+      "status": "skipped",
+      "result_file": "ptq_result.json"
+    },
+    {
+      "command": "prune",
+      "status": "ok",
+      "result_file": "prune_result.json"
+    },
+    {
+      "command": "semi24",
+      "status": "ok",
+      "result_file": "sparsity24_result.json"
+    }
+  ],
+  "finished_at": "2026-04-26T17:09:11"
+}

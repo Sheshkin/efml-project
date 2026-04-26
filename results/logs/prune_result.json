@@ -1,0 +1,55 @@
+{
+  "method": "Pruning (unstructured)",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "cuda",
+  "prune_amount": 0.5,
+  "weight_sparsity": 0.5,
+  "storage_format": "dense",
+  "sparse_kernel_backend": null,
+  "speedup_valid": false,
+  "speedup_note": "Weights are zeroed in dense Conv2d tensors; no sparse kernels are used.",
+  "model_size_mb": 26.782722,
+  "effective_model_size_mb": 13.391361,
+  "theoretical_nonzero_weight_size_mb": 13.391361,
+  "p50_latency_ms": 4.730664999442524,
+  "p95_latency_ms": 5.138935900049546,
+  "mean_latency_ms": 4.760698379959649,
+  "throughput_img_sec": 487.41008999353426,
+  "batch_size": 16,
+  "dice": 0.8972953950621251,
+  "iou": 0.8260190244363029,
+  "pixel_accuracy": 0.9459754401118855,
+  "eval_samples": 3669,
+  "memory_allocated_mb": 91.313664,
+  "memory_reserved_mb": 3739.222016,
+  "memory_peak_mb": 3128.643072,
+  "status": "ok",
+  "experiment": "prune",
+  "checkpoint_path": "results/checkpoints/best_model.pt",
+  "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+  "data_signature": {
+    "root": "./data",
+    "split": "test",
+    "image_size": 256,
+    "batch_size": 8,
+    "num_workers": 0,
+    "test_max_samples": null,
+    "seed": 42
+  },
+  "model_config": {
+    "checkpoint": "results/checkpoints/best_model.pt",
+    "base_filters": 64,
+    "bilinear": true
+  },
+  "benchmark_config": {
+    "precision": "fp16",
+    "warmup_runs": 20,
+    "latency_runs": 100,
+    "batch_size_throughput": 16,
+    "input_size": [
+      256,
+      256
+    ]
+  }
+}

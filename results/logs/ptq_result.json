@@ -1,0 +1,63 @@
+{
+  "method": "PTQ (int8)",
+  "precision": "int8",
+  "device": "cuda",
+  "runtime_device": "mixed",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "available_profile_providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "ort_provider_counts": {
+    "CPUExecutionProvider": 99,
+    "CUDAExecutionProvider": 173
+  },
+  "onnx_path": "results/v100/artifacts/onnx/unet_ptq_int8.onnx",
+  "model_size_mb": 13.527031,
+  "mean_latency_ms": 6.104991840111325,
+  "p50_latency_ms": 6.169612001031055,
+  "p95_latency_ms": 6.270300400319684,
+  "throughput_img_sec": 236.85166043593455,
+  "batch_size": 16,
+  "benchmark_runs": 100,
+  "io_binding": true,
+  "dice": 0.893951839193982,
+  "iou": 0.8205541282136812,
+  "pixel_accuracy": 0.9445061588781216,
+  "eval_samples": 3669,
+  "status": "ok",
+  "quantization_mode": "static",
+  "calibration_batches": 32,
+  "source_model_size_mb": 53.582646,
+  "source_fp32_onnx": "results/v100/artifacts/onnx/unet_ptq_fp32.onnx",
+  "quantized_onnx": "results/v100/artifacts/onnx/unet_ptq_int8.onnx",
+  "experiment": "ptq",
+  "checkpoint_path": "results/checkpoints/best_model.pt",
+  "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+  "data_signature": {
+    "root": "./data",
+    "split": "test",
+    "image_size": 256,
+    "batch_size": 8,
+    "num_workers": 0,
+    "test_max_samples": null,
+    "seed": 42
+  },
+  "model_config": {
+    "checkpoint": "results/checkpoints/best_model.pt",
+    "base_filters": 64,
+    "bilinear": true
+  },
+  "benchmark_config": {
+    "warmup_runs": 20,
+    "latency_runs": 100,
+    "batch_size_throughput": 16,
+    "input_size": [
+      256,
+      256
+    ]
+  }
+}

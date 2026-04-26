@@ -1,0 +1,47 @@
+{
+  "method": "Baseline FP16",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "cuda",
+  "model_size_mb": 26.782722,
+  "p50_latency_ms": 4.503641999690444,
+  "p95_latency_ms": 4.76674375076982,
+  "mean_latency_ms": 4.533388629988622,
+  "throughput_img_sec": 488.3356788327799,
+  "batch_size": 16,
+  "dice": 0.8943519627862745,
+  "iou": 0.8212070248698174,
+  "pixel_accuracy": 0.9446708656488045,
+  "eval_samples": 3669,
+  "memory_allocated_mb": 33.506816,
+  "memory_reserved_mb": 1394.60608,
+  "memory_peak_mb": 994.691072,
+  "status": "ok",
+  "experiment": "baseline",
+  "checkpoint_path": "results/checkpoints/best_model.pt",
+  "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+  "data_signature": {
+    "root": "./data",
+    "split": "test",
+    "image_size": 256,
+    "batch_size": 8,
+    "num_workers": 0,
+    "test_max_samples": null,
+    "seed": 42
+  },
+  "model_config": {
+    "checkpoint": "results/checkpoints/best_model.pt",
+    "base_filters": 64,
+    "bilinear": true
+  },
+  "benchmark_config": {
+    "precision": "fp16",
+    "warmup_runs": 20,
+    "latency_runs": 100,
+    "batch_size_throughput": 16,
+    "input_size": [
+      256,
+      256
+    ]
+  }
+}

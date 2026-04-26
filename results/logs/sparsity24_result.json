@@ -1,0 +1,56 @@
+{
+  "method": "2:4 Semi-structured",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "cuda",
+  "weight_sparsity": 0.5,
+  "storage_format": "dense_mask",
+  "sparse_kernel_backend": null,
+  "sparse_speedup_supported": false,
+  "speedup_valid": false,
+  "speedup_note": "sm_70 does not support NVIDIA 2:4 sparse tensor core speedups (V100 is sm_70).",
+  "cuda_capability": "sm_70",
+  "model_size_mb": 26.782722,
+  "effective_model_size_mb": 13.391361,
+  "theoretical_nonzero_weight_size_mb": 13.391361,
+  "p50_latency_ms": 4.762476000905735,
+  "p95_latency_ms": 5.212105649115983,
+  "mean_latency_ms": 4.791548140001396,
+  "throughput_img_sec": 488.63367524823843,
+  "batch_size": 16,
+  "dice": 0.8851701233035442,
+  "iou": 0.8076069593819457,
+  "pixel_accuracy": 0.9395207144902817,
+  "eval_samples": 3669,
+  "memory_allocated_mb": 146.02752,
+  "memory_reserved_mb": 3739.222016,
+  "memory_peak_mb": 3128.643072,
+  "status": "ok",
+  "experiment": "semi24",
+  "checkpoint_path": "results/checkpoints/best_model.pt",
+  "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+  "data_signature": {
+    "root": "./data",
+    "split": "test",
+    "image_size": 256,
+    "batch_size": 8,
+    "num_workers": 0,
+    "test_max_samples": null,
+    "seed": 42
+  },
+  "model_config": {
+    "checkpoint": "results/checkpoints/best_model.pt",
+    "base_filters": 64,
+    "bilinear": true
+  },
+  "benchmark_config": {
+    "precision": "fp16",
+    "warmup_runs": 20,
+    "latency_runs": 100,
+    "batch_size_throughput": 16,
+    "input_size": [
+      256,
+      256
+    ]
+  }
+}

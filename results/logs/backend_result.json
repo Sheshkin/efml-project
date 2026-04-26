@@ -1,0 +1,60 @@
+{
+  "method": "ONNX Runtime",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "mixed",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "available_profile_providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "ort_provider_counts": {
+    "CUDAExecutionProvider": 61,
+    "CPUExecutionProvider": 80
+  },
+  "onnx_path": "results/v100/artifacts/onnx/unet_backend.onnx",
+  "model_size_mb": 26.807854,
+  "mean_latency_ms": 3.1062898599884647,
+  "p50_latency_ms": 3.0972494996603928,
+  "p95_latency_ms": 3.235148899602791,
+  "throughput_img_sec": 587.1627851649763,
+  "batch_size": 16,
+  "benchmark_runs": 100,
+  "io_binding": true,
+  "dice": 0.8943383631637357,
+  "iou": 0.8211891827416959,
+  "pixel_accuracy": 0.9446698924961646,
+  "eval_samples": 3669,
+  "status": "ok",
+  "experiment": "backend",
+  "checkpoint_path": "results/checkpoints/best_model.pt",
+  "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+  "data_signature": {
+    "root": "./data",
+    "split": "test",
+    "image_size": 256,
+    "batch_size": 8,
+    "num_workers": 0,
+    "test_max_samples": null,
+    "seed": 42
+  },
+  "model_config": {
+    "checkpoint": "results/checkpoints/best_model.pt",
+    "base_filters": 64,
+    "bilinear": true
+  },
+  "benchmark_config": {
+    "precision": "fp16",
+    "warmup_runs": 20,
+    "latency_runs": 100,
+    "batch_size_throughput": 16,
+    "input_size": [
+      256,
+      256
+    ],
+    "seed": 42
+  }
+}

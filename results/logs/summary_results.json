@@ -1,0 +1,338 @@
+[
+  {
+    "method": "ONNX Runtime",
+    "precision": "fp16",
+    "device": "cuda",
+    "runtime_device": "mixed",
+    "providers": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "available_profile_providers": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "ort_provider_counts": {
+      "CUDAExecutionProvider": 61,
+      "CPUExecutionProvider": 80
+    },
+    "onnx_path": "results/v100/artifacts/onnx/unet_backend.onnx",
+    "model_size_mb": 26.807854,
+    "mean_latency_ms": 3.1062898599884647,
+    "p50_latency_ms": 3.0972494996603928,
+    "p95_latency_ms": 3.235148899602791,
+    "throughput_img_sec": 587.1627851649763,
+    "batch_size": 16,
+    "benchmark_runs": 100,
+    "io_binding": true,
+    "dice": 0.8943383631637357,
+    "iou": 0.8211891827416959,
+    "pixel_accuracy": 0.9446698924961646,
+    "eval_samples": 3669,
+    "status": "ok",
+    "experiment": "backend",
+    "checkpoint_path": "results/checkpoints/best_model.pt",
+    "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+    "data_signature": {
+      "root": "./data",
+      "split": "test",
+      "image_size": 256,
+      "batch_size": 8,
+      "num_workers": 0,
+      "test_max_samples": null,
+      "seed": 42
+    },
+    "model_config": {
+      "checkpoint": "results/checkpoints/best_model.pt",
+      "base_filters": 64,
+      "bilinear": true
+    },
+    "benchmark_config": {
+      "precision": "fp16",
+      "warmup_runs": 20,
+      "latency_runs": 100,
+      "batch_size_throughput": 16,
+      "input_size": [
+        256,
+        256
+      ],
+      "seed": 42
+    },
+    "result_file": "backend_result.json"
+  },
+  {
+    "method": "Baseline FP16",
+    "precision": "fp16",
+    "device": "cuda",
+    "runtime_device": "cuda",
+    "model_size_mb": 26.782722,
+    "p50_latency_ms": 4.503641999690444,
+    "p95_latency_ms": 4.76674375076982,
+    "mean_latency_ms": 4.533388629988622,
+    "throughput_img_sec": 488.3356788327799,
+    "batch_size": 16,
+    "dice": 0.8943519627862745,
+    "iou": 0.8212070248698174,
+    "pixel_accuracy": 0.9446708656488045,
+    "eval_samples": 3669,
+    "memory_allocated_mb": 33.506816,
+    "memory_reserved_mb": 1394.60608,
+    "memory_peak_mb": 994.691072,
+    "status": "ok",
+    "experiment": "baseline",
+    "checkpoint_path": "results/checkpoints/best_model.pt",
+    "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+    "data_signature": {
+      "root": "./data",
+      "split": "test",
+      "image_size": 256,
+      "batch_size": 8,
+      "num_workers": 0,
+      "test_max_samples": null,
+      "seed": 42
+    },
+    "model_config": {
+      "checkpoint": "results/checkpoints/best_model.pt",
+      "base_filters": 64,
+      "bilinear": true
+    },
+    "benchmark_config": {
+      "precision": "fp16",
+      "warmup_runs": 20,
+      "latency_runs": 100,
+      "batch_size_throughput": 16,
+      "input_size": [
+        256,
+        256
+      ]
+    },
+    "result_file": "baseline_result.json"
+  },
+  {
+    "method": "torch.compile (reduce-overhead)",
+    "precision": "fp16",
+    "device": "cuda",
+    "runtime_device": "cuda",
+    "compile_mode": "reduce-overhead",
+    "compile_time_s": 12.472106826999152,
+    "model_size_mb": 26.782722,
+    "p50_latency_ms": 3.004082000188646,
+    "p95_latency_ms": 3.208085350706824,
+    "mean_latency_ms": 3.018868039998779,
+    "throughput_img_sec": 735.9753920752468,
+    "batch_size": 16,
+    "dice": 0.8943521557175259,
+    "iou": 0.8212073668208035,
+    "pixel_accuracy": 0.9446709280151799,
+    "eval_samples": 3669,
+    "memory_allocated_mb": 34.031104,
+    "memory_reserved_mb": 1665.138688,
+    "memory_peak_mb": 1382.500352,
+    "status": "ok",
+    "experiment": "compile",
+    "checkpoint_path": "results/checkpoints/best_model.pt",
+    "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+    "data_signature": {
+      "root": "./data",
+      "split": "test",
+      "image_size": 256,
+      "batch_size": 8,
+      "num_workers": 0,
+      "test_max_samples": null,
+      "seed": 42
+    },
+    "model_config": {
+      "checkpoint": "results/checkpoints/best_model.pt",
+      "base_filters": 64,
+      "bilinear": true
+    },
+    "benchmark_config": {
+      "precision": "fp16",
+      "warmup_runs": 20,
+      "latency_runs": 100,
+      "batch_size_throughput": 16,
+      "input_size": [
+        256,
+        256
+      ]
+    },
+    "result_file": "compile_result.json"
+  },
+  {
+    "method": "Pruning (unstructured)",
+    "precision": "fp16",
+    "device": "cuda",
+    "runtime_device": "cuda",
+    "prune_amount": 0.5,
+    "weight_sparsity": 0.5,
+    "storage_format": "dense",
+    "sparse_kernel_backend": null,
+    "speedup_valid": false,
+    "speedup_note": "Weights are zeroed in dense Conv2d tensors; no sparse kernels are used.",
+    "model_size_mb": 26.782722,
+    "effective_model_size_mb": 13.391361,
+    "theoretical_nonzero_weight_size_mb": 13.391361,
+    "p50_latency_ms": 4.730664999442524,
+    "p95_latency_ms": 5.138935900049546,
+    "mean_latency_ms": 4.760698379959649,
+    "throughput_img_sec": 487.41008999353426,
+    "batch_size": 16,
+    "dice": 0.8972953950621251,
+    "iou": 0.8260190244363029,
+    "pixel_accuracy": 0.9459754401118855,
+    "eval_samples": 3669,
+    "memory_allocated_mb": 91.313664,
+    "memory_reserved_mb": 3739.222016,
+    "memory_peak_mb": 3128.643072,
+    "status": "ok",
+    "experiment": "prune",
+    "checkpoint_path": "results/checkpoints/best_model.pt",
+    "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+    "data_signature": {
+      "root": "./data",
+      "split": "test",
+      "image_size": 256,
+      "batch_size": 8,
+      "num_workers": 0,
+      "test_max_samples": null,
+      "seed": 42
+    },
+    "model_config": {
+      "checkpoint": "results/checkpoints/best_model.pt",
+      "base_filters": 64,
+      "bilinear": true
+    },
+    "benchmark_config": {
+      "precision": "fp16",
+      "warmup_runs": 20,
+      "latency_runs": 100,
+      "batch_size_throughput": 16,
+      "input_size": [
+        256,
+        256
+      ]
+    },
+    "result_file": "prune_result.json"
+  },
+  {
+    "method": "PTQ (int8)",
+    "precision": "int8",
+    "device": "cuda",
+    "runtime_device": "mixed",
+    "providers": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "available_profile_providers": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "ort_provider_counts": {
+      "CPUExecutionProvider": 99,
+      "CUDAExecutionProvider": 173
+    },
+    "onnx_path": "results/v100/artifacts/onnx/unet_ptq_int8.onnx",
+    "model_size_mb": 13.527031,
+    "mean_latency_ms": 6.104991840111325,
+    "p50_latency_ms": 6.169612001031055,
+    "p95_latency_ms": 6.270300400319684,
+    "throughput_img_sec": 236.85166043593455,
+    "batch_size": 16,
+    "benchmark_runs": 100,
+    "io_binding": true,
+    "dice": 0.893951839193982,
+    "iou": 0.8205541282136812,
+    "pixel_accuracy": 0.9445061588781216,
+    "eval_samples": 3669,
+    "status": "ok",
+    "quantization_mode": "static",
+    "calibration_batches": 32,
+    "source_model_size_mb": 53.582646,
+    "source_fp32_onnx": "results/v100/artifacts/onnx/unet_ptq_fp32.onnx",
+    "quantized_onnx": "results/v100/artifacts/onnx/unet_ptq_int8.onnx",
+    "experiment": "ptq",
+    "checkpoint_path": "results/checkpoints/best_model.pt",
+    "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+    "data_signature": {
+      "root": "./data",
+      "split": "test",
+      "image_size": 256,
+      "batch_size": 8,
+      "num_workers": 0,
+      "test_max_samples": null,
+      "seed": 42
+    },
+    "model_config": {
+      "checkpoint": "results/checkpoints/best_model.pt",
+      "base_filters": 64,
+      "bilinear": true
+    },
+    "benchmark_config": {
+      "warmup_runs": 20,
+      "latency_runs": 100,
+      "batch_size_throughput": 16,
+      "input_size": [
+        256,
+        256
+      ]
+    },
+    "result_file": "ptq_result.json"
+  },
+  {
+    "method": "2:4 Semi-structured",
+    "precision": "fp16",
+    "device": "cuda",
+    "runtime_device": "cuda",
+    "weight_sparsity": 0.5,
+    "storage_format": "dense_mask",
+    "sparse_kernel_backend": null,
+    "sparse_speedup_supported": false,
+    "speedup_valid": false,
+    "speedup_note": "sm_70 does not support NVIDIA 2:4 sparse tensor core speedups (V100 is sm_70).",
+    "cuda_capability": "sm_70",
+    "model_size_mb": 26.782722,
+    "effective_model_size_mb": 13.391361,
+    "theoretical_nonzero_weight_size_mb": 13.391361,
+    "p50_latency_ms": 4.762476000905735,
+    "p95_latency_ms": 5.212105649115983,
+    "mean_latency_ms": 4.791548140001396,
+    "throughput_img_sec": 488.63367524823843,
+    "batch_size": 16,
+    "dice": 0.8851701233035442,
+    "iou": 0.8076069593819457,
+    "pixel_accuracy": 0.9395207144902817,
+    "eval_samples": 3669,
+    "memory_allocated_mb": 146.02752,
+    "memory_reserved_mb": 3739.222016,
+    "memory_peak_mb": 3128.643072,
+    "status": "ok",
+    "experiment": "semi24",
+    "checkpoint_path": "results/checkpoints/best_model.pt",
+    "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+    "data_signature": {
+      "root": "./data",
+      "split": "test",
+      "image_size": 256,
+      "batch_size": 8,
+      "num_workers": 0,
+      "test_max_samples": null,
+      "seed": 42
+    },
+    "model_config": {
+      "checkpoint": "results/checkpoints/best_model.pt",
+      "base_filters": 64,
+      "bilinear": true
+    },
+    "benchmark_config": {
+      "precision": "fp16",
+      "warmup_runs": 20,
+      "latency_runs": 100,
+      "batch_size_throughput": 16,
+      "input_size": [
+        256,
+        256
+      ]
+    },
+    "result_file": "sparsity24_result.json"
+  }
+]

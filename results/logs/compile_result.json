@@ -1,0 +1,49 @@
+{
+  "method": "torch.compile (reduce-overhead)",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "cuda",
+  "compile_mode": "reduce-overhead",
+  "compile_time_s": 12.472106826999152,
+  "model_size_mb": 26.782722,
+  "p50_latency_ms": 3.004082000188646,
+  "p95_latency_ms": 3.208085350706824,
+  "mean_latency_ms": 3.018868039998779,
+  "throughput_img_sec": 735.9753920752468,
+  "batch_size": 16,
+  "dice": 0.8943521557175259,
+  "iou": 0.8212073668208035,
+  "pixel_accuracy": 0.9446709280151799,
+  "eval_samples": 3669,
+  "memory_allocated_mb": 34.031104,
+  "memory_reserved_mb": 1665.138688,
+  "memory_peak_mb": 1382.500352,
+  "status": "ok",
+  "experiment": "compile",
+  "checkpoint_path": "results/checkpoints/best_model.pt",
+  "checkpoint_sha256": "4d17afc6d498b92030d18f817860903618e94d6a223ae1e8917d62cc3d51d220",
+  "data_signature": {
+    "root": "./data",
+    "split": "test",
+    "image_size": 256,
+    "batch_size": 8,
+    "num_workers": 0,
+    "test_max_samples": null,
+    "seed": 42
+  },
+  "model_config": {
+    "checkpoint": "results/checkpoints/best_model.pt",
+    "base_filters": 64,
+    "bilinear": true
+  },
+  "benchmark_config": {
+    "precision": "fp16",
+    "warmup_runs": 20,
+    "latency_runs": 100,
+    "batch_size_throughput": 16,
+    "input_size": [
+      256,
+      256
+    ]
+  }
+}
