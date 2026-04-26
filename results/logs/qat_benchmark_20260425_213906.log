@@ -1,0 +1,5 @@
+2026-04-25 21:39:06 [qat_benchmark] INFO: Running QAT benchmark | train_device=cuda | epochs=2
+2026-04-25 21:39:06 [qat_benchmark] INFO: Using quantized engine: fbgemm
+2026-04-25 21:39:41 [qat_benchmark] INFO: QAT epoch 1/2 | loss=0.1067
+2026-04-25 21:40:14 [qat_benchmark] INFO: QAT epoch 2/2 | loss=0.0911
+2026-04-25 22:03:41 [qat_benchmark] INFO: Saved QAT result -> results/gpu_future/logs/qat_result.json

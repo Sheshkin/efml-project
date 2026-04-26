@@ -1,0 +1,4 @@
+2026-04-26 17:06:40 [sparsity24_benchmark] INFO: Running 2:4 semi-structured masking + finetuning
+2026-04-26 17:07:09 [sparsity24_benchmark] INFO: Finetune epoch 1/2 | loss=0.1808
+2026-04-26 17:07:38 [sparsity24_benchmark] INFO: Finetune epoch 2/2 | loss=0.1629
+2026-04-26 17:09:11 [sparsity24_benchmark] INFO: Saved 2:4 result -> results/v100/logs/sparsity24_result.json

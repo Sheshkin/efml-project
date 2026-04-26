@@ -1,0 +1,4 @@
+2026-04-25 22:03:43 [prune_benchmark] INFO: Running unstructured pruning | amount=0.50 | finetune_epochs=2
+2026-04-25 22:04:12 [prune_benchmark] INFO: Finetune epoch 1/2 | loss=0.1003
+2026-04-25 22:04:41 [prune_benchmark] INFO: Finetune epoch 2/2 | loss=0.1008
+2026-04-25 22:06:17 [prune_benchmark] INFO: Saved prune result -> results/gpu_future/logs/prune_result.json

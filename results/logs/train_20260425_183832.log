@@ -1,0 +1,3 @@
+2026-04-25 18:38:32 [train] INFO: Training on device: cuda
+2026-04-25 18:38:32 [train] INFO: UNet parameters: 13,391,361
+2026-04-25 19:43:48 [train] INFO: Training complete.

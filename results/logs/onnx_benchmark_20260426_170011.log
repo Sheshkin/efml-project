@@ -1,0 +1,11 @@
+2026-04-26 17:00:11 [onnx_benchmark] INFO: Exporting ONNX model -> results/v100/artifacts/onnx/unet_backend.onnx
+2026-04-26 17:00:12 [onnx_benchmark] INFO: Creating ONNX Runtime session (device=cuda)
+2026-04-26 17:00:12 [onnx_benchmark] INFO: ONNX Runtime available providers: ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'AzureExecutionProvider', 'CPUExecutionProvider']
+2026-04-26 17:00:13 [onnx_benchmark] INFO: ONNX Runtime available providers: ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'AzureExecutionProvider', 'CPUExecutionProvider']
+2026-04-26 17:00:15 [onnx_benchmark] INFO: Verified ONNX Runtime CUDA execution: {'CUDAExecutionProvider': 61, 'CPUExecutionProvider': 80}
+2026-04-26 17:00:15 [onnx_benchmark] INFO: Evaluating ONNX model quality...
+2026-04-26 17:01:58 [onnx_benchmark] INFO: ONNX quality | Dice=0.8943 IoU=0.8212 PixAcc=0.9447
+2026-04-26 17:01:58 [onnx_benchmark] INFO: Running ONNX benchmark...
+2026-04-26 17:02:04 [onnx_benchmark] INFO: Saved ONNX result -> results/v100/logs/backend_result.json
+2026-04-26 17:04:02 [onnx_benchmark] INFO: Creating ONNX Runtime session (device=cuda)
+2026-04-26 17:04:02 [onnx_benchmark] INFO: ONNX Runtime available providers: ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'AzureExecutionProvider', 'CPUExecutionProvider']

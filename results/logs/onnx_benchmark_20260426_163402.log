@@ -1,0 +1,3 @@
+2026-04-26 16:34:02 [onnx_benchmark] INFO: Exporting ONNX model -> /home/jupyter/work/results/v100_core/artifacts/onnx/unet_backend.onnx
+2026-04-26 16:34:05 [onnx_benchmark] INFO: Creating ONNX Runtime session (device=cuda)
+2026-04-26 16:34:06 [onnx_benchmark] INFO: Evaluating ONNX model quality...

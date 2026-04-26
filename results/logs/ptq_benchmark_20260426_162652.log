@@ -1,0 +1,3 @@
+2026-04-26 16:26:52 [ptq_benchmark] INFO: Exporting FP32 ONNX for PTQ -> results/v100_core/artifacts/onnx/unet_ptq_fp32.onnx
+2026-04-26 16:27:00 [ptq_benchmark] INFO: Running static PTQ quantization (QDQ + per-channel)...
+2026-04-26 16:28:45 [ptq_benchmark] INFO: Running benchmark on PTQ model -> results/v100_core/artifacts/onnx/unet_ptq_int8.onnx

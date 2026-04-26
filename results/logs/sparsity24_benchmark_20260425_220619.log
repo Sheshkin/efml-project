@@ -1,0 +1,4 @@
+2026-04-25 22:06:19 [sparsity24_benchmark] INFO: Running 2:4 semi-structured masking + finetuning
+2026-04-25 22:06:47 [sparsity24_benchmark] INFO: Finetune epoch 1/2 | loss=0.1808
+2026-04-25 22:07:15 [sparsity24_benchmark] INFO: Finetune epoch 2/2 | loss=0.1629
+2026-04-25 22:08:48 [sparsity24_benchmark] INFO: Saved 2:4 result -> results/gpu_future/logs/sparsity24_result.json

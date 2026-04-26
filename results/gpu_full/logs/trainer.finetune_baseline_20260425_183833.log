@@ -1,0 +1,53 @@
+2026-04-25 18:38:33 [trainer.finetune_baseline] INFO: Starting training for 30 epochs on cuda
+2026-04-25 18:38:33 [trainer.finetune_baseline] INFO: Parameters: 13,391,361
+2026-04-25 18:40:46 [trainer.finetune_baseline] INFO: Epoch   1/30 | loss=0.4343 | val_loss=0.3595 | dice=0.7409 | iou=0.6111 | lr=9.99e-05 | 133.1s
+2026-04-25 18:40:48 [trainer.finetune_baseline] INFO:   → New best Dice: 0.7409 (saved)
+2026-04-25 18:42:57 [trainer.finetune_baseline] INFO: Epoch   2/30 | loss=0.3177 | val_loss=0.2740 | dice=0.7956 | iou=0.6785 | lr=9.96e-05 | 128.6s
+2026-04-25 18:42:58 [trainer.finetune_baseline] INFO:   → New best Dice: 0.7956 (saved)
+2026-04-25 18:45:08 [trainer.finetune_baseline] INFO: Epoch   3/30 | loss=0.2796 | val_loss=0.2292 | dice=0.8272 | iou=0.7204 | lr=9.91e-05 | 129.9s
+2026-04-25 18:45:10 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8272 (saved)
+2026-04-25 18:47:19 [trainer.finetune_baseline] INFO: Epoch   4/30 | loss=0.2529 | val_loss=0.2135 | dice=0.8409 | iou=0.7406 | lr=9.84e-05 | 129.0s
+2026-04-25 18:47:20 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8409 (saved)
+2026-04-25 18:49:29 [trainer.finetune_baseline] INFO: Epoch   5/30 | loss=0.2375 | val_loss=0.2280 | dice=0.8272 | iou=0.7204 | lr=9.76e-05 | 129.0s
+2026-04-25 18:51:40 [trainer.finetune_baseline] INFO: Epoch   6/30 | loss=0.2249 | val_loss=0.1998 | dice=0.8469 | iou=0.7467 | lr=9.65e-05 | 130.1s
+2026-04-25 18:51:41 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8469 (saved)
+2026-04-25 18:53:50 [trainer.finetune_baseline] INFO: Epoch   7/30 | loss=0.2158 | val_loss=0.2048 | dice=0.8424 | iou=0.7441 | lr=9.53e-05 | 128.6s
+2026-04-25 18:55:59 [trainer.finetune_baseline] INFO: Epoch   8/30 | loss=0.2065 | val_loss=0.1908 | dice=0.8559 | iou=0.7635 | lr=9.39e-05 | 129.0s
+2026-04-25 18:56:01 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8559 (saved)
+2026-04-25 18:58:10 [trainer.finetune_baseline] INFO: Epoch   9/30 | loss=0.1968 | val_loss=0.1892 | dice=0.8521 | iou=0.7579 | lr=9.23e-05 | 129.4s
+2026-04-25 19:00:19 [trainer.finetune_baseline] INFO: Epoch  10/30 | loss=0.1910 | val_loss=0.1919 | dice=0.8559 | iou=0.7642 | lr=9.05e-05 | 128.8s
+2026-04-25 19:00:21 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8559 (saved)
+2026-04-25 19:02:31 [trainer.finetune_baseline] INFO: Epoch  11/30 | loss=0.1807 | val_loss=0.1742 | dice=0.8671 | iou=0.7794 | lr=8.86e-05 | 130.2s
+2026-04-25 19:02:33 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8671 (saved)
+2026-04-25 19:04:43 [trainer.finetune_baseline] INFO: Epoch  12/30 | loss=0.1775 | val_loss=0.1777 | dice=0.8667 | iou=0.7791 | lr=8.66e-05 | 129.5s
+2026-04-25 19:06:53 [trainer.finetune_baseline] INFO: Epoch  13/30 | loss=0.1719 | val_loss=0.1667 | dice=0.8706 | iou=0.7860 | lr=8.44e-05 | 130.5s
+2026-04-25 19:06:55 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8706 (saved)
+2026-04-25 19:09:05 [trainer.finetune_baseline] INFO: Epoch  14/30 | loss=0.1643 | val_loss=0.1724 | dice=0.8703 | iou=0.7834 | lr=8.21e-05 | 129.9s
+2026-04-25 19:11:15 [trainer.finetune_baseline] INFO: Epoch  15/30 | loss=0.1617 | val_loss=0.1568 | dice=0.8781 | iou=0.7955 | lr=7.96e-05 | 130.4s
+2026-04-25 19:11:17 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8781 (saved)
+2026-04-25 19:13:30 [trainer.finetune_baseline] INFO: Epoch  16/30 | loss=0.1578 | val_loss=0.1531 | dice=0.8838 | iou=0.8035 | lr=7.70e-05 | 133.0s
+2026-04-25 19:13:32 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8838 (saved)
+2026-04-25 19:15:42 [trainer.finetune_baseline] INFO: Epoch  17/30 | loss=0.1510 | val_loss=0.1531 | dice=0.8856 | iou=0.8065 | lr=7.43e-05 | 129.9s
+2026-04-25 19:15:44 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8856 (saved)
+2026-04-25 19:17:51 [trainer.finetune_baseline] INFO: Epoch  18/30 | loss=0.1463 | val_loss=0.1490 | dice=0.8837 | iou=0.8033 | lr=7.16e-05 | 126.9s
+2026-04-25 19:19:59 [trainer.finetune_baseline] INFO: Epoch  19/30 | loss=0.1420 | val_loss=0.1445 | dice=0.8884 | iou=0.8110 | lr=6.87e-05 | 127.9s
+2026-04-25 19:20:02 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8884 (saved)
+2026-04-25 19:22:10 [trainer.finetune_baseline] INFO: Epoch  20/30 | loss=0.1395 | val_loss=0.1409 | dice=0.8906 | iou=0.8147 | lr=6.58e-05 | 128.6s
+2026-04-25 19:22:12 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8906 (saved)
+2026-04-25 19:24:23 [trainer.finetune_baseline] INFO: Epoch  21/30 | loss=0.1360 | val_loss=0.1467 | dice=0.8875 | iou=0.8091 | lr=6.28e-05 | 131.3s
+2026-04-25 19:26:32 [trainer.finetune_baseline] INFO: Epoch  22/30 | loss=0.1319 | val_loss=0.1372 | dice=0.8933 | iou=0.8198 | lr=5.98e-05 | 128.6s
+2026-04-25 19:26:34 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8933 (saved)
+2026-04-25 19:28:42 [trainer.finetune_baseline] INFO: Epoch  23/30 | loss=0.1285 | val_loss=0.1337 | dice=0.8984 | iou=0.8246 | lr=5.67e-05 | 127.7s
+2026-04-25 19:28:43 [trainer.finetune_baseline] INFO:   → New best Dice: 0.8984 (saved)
+2026-04-25 19:30:51 [trainer.finetune_baseline] INFO: Epoch  24/30 | loss=0.1229 | val_loss=0.1339 | dice=0.8980 | iou=0.8255 | lr=5.36e-05 | 127.9s
+2026-04-25 19:32:57 [trainer.finetune_baseline] INFO: Epoch  25/30 | loss=0.1206 | val_loss=0.1467 | dice=0.8892 | iou=0.8133 | lr=5.05e-05 | 126.1s
+2026-04-25 19:35:06 [trainer.finetune_baseline] INFO: Epoch  26/30 | loss=0.1171 | val_loss=0.1294 | dice=0.9004 | iou=0.8281 | lr=4.74e-05 | 128.3s
+2026-04-25 19:35:08 [trainer.finetune_baseline] INFO:   → New best Dice: 0.9004 (saved)
+2026-04-25 19:37:17 [trainer.finetune_baseline] INFO: Epoch  27/30 | loss=0.1143 | val_loss=0.1377 | dice=0.8958 | iou=0.8225 | lr=4.43e-05 | 129.0s
+2026-04-25 19:39:24 [trainer.finetune_baseline] INFO: Epoch  28/30 | loss=0.1101 | val_loss=0.1299 | dice=0.9022 | iou=0.8312 | lr=4.12e-05 | 126.7s
+2026-04-25 19:39:25 [trainer.finetune_baseline] INFO:   → New best Dice: 0.9022 (saved)
+2026-04-25 19:41:34 [trainer.finetune_baseline] INFO: Epoch  29/30 | loss=0.1078 | val_loss=0.1270 | dice=0.9025 | iou=0.8322 | lr=3.82e-05 | 128.8s
+2026-04-25 19:41:36 [trainer.finetune_baseline] INFO:   → New best Dice: 0.9025 (saved)
+2026-04-25 19:43:44 [trainer.finetune_baseline] INFO: Epoch  30/30 | loss=0.1042 | val_loss=0.1293 | dice=0.9028 | iou=0.8328 | lr=3.52e-05 | 127.5s
+2026-04-25 19:43:46 [trainer.finetune_baseline] INFO:   → New best Dice: 0.9028 (saved)
+2026-04-25 19:43:48 [trainer.finetune_baseline] INFO: Training complete. Best Dice: 0.9028

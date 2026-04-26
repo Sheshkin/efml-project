@@ -1,0 +1,27 @@
+2026-04-26 16:03:07 [compile_benchmark] INFO: Running torch.compile benchmark | mode=reduce-overhead | device=cuda
+2026-04-26 16:03:07 [compile_benchmark] INFO: Compiling model with mode='reduce-overhead'...
+2026-04-26 16:03:19 [compile_benchmark] INFO: Compile + first inference time: 12.61s
+2026-04-26 16:03:19 [compile_benchmark] INFO: Evaluating quality...
+2026-04-26 16:05:04 [compile_benchmark] INFO: Dice=0.8944 | IoU=0.8212
+2026-04-26 16:05:11 [compile_benchmark] INFO: Compile result: {
+  "method": "torch.compile (reduce-overhead)",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "cuda",
+  "compile_mode": "reduce-overhead",
+  "compile_time_s": 12.606337360000907,
+  "model_size_mb": 26.782722,
+  "p50_latency_ms": 2.9599839999718824,
+  "p95_latency_ms": 3.187652249198436,
+  "mean_latency_ms": 2.991845829983504,
+  "throughput_img_sec": 721.6640331314626,
+  "batch_size": 16,
+  "dice": 0.8943521557175259,
+  "iou": 0.8212073668208035,
+  "pixel_accuracy": 0.9446709280151799,
+  "eval_samples": 3669,
+  "memory_allocated_mb": 34.031104,
+  "memory_reserved_mb": 1665.138688,
+  "memory_peak_mb": 1382.500352,
+  "status": "ok"
+}

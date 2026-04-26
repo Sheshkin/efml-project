@@ -1,0 +1,4 @@
+2026-04-25 22:08:50 [tvm_benchmark] INFO: Exporting model to ONNX for TVM -> results/gpu_future/artifacts/onnx/unet_tvm_fp32.onnx
+2026-04-25 22:08:51 [tvm_benchmark] INFO: Compiling TVM graph...
+2026-04-25 22:08:51 [tvm_benchmark] WARNING: Skipping TVM benchmark: TVM stack is not available. Install TVM + ONNX build dependencies first.
+2026-04-25 22:08:51 [tvm_benchmark] INFO: Saved TVM result -> results/gpu_future/logs/tvm_result.json

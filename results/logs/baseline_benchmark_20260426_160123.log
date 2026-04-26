@@ -1,0 +1,24 @@
+2026-04-26 16:01:23 [baseline_benchmark] INFO: Running baseline benchmark | device=cuda | precision=fp16
+2026-04-26 16:01:23 [baseline_benchmark] INFO: Evaluating quality...
+2026-04-26 16:02:59 [baseline_benchmark] INFO: Dice=0.8944 | IoU=0.8212 | PixAcc=0.9447
+2026-04-26 16:02:59 [baseline_benchmark] INFO: Running latency benchmark (bs=1)...
+2026-04-26 16:03:01 [baseline_benchmark] INFO: Baseline result: {
+  "method": "Baseline FP16",
+  "precision": "fp16",
+  "device": "cuda",
+  "runtime_device": "cuda",
+  "model_size_mb": 26.782722,
+  "p50_latency_ms": 4.349208500570967,
+  "p95_latency_ms": 4.624796399639308,
+  "mean_latency_ms": 4.376115940067393,
+  "throughput_img_sec": 487.75131388368857,
+  "batch_size": 16,
+  "dice": 0.8943519627862745,
+  "iou": 0.8212070248698174,
+  "pixel_accuracy": 0.9446708656488045,
+  "eval_samples": 3669,
+  "memory_allocated_mb": 33.506816,
+  "memory_reserved_mb": 1394.60608,
+  "memory_peak_mb": 994.691072,
+  "status": "ok"
+}

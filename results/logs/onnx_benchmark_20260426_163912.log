@@ -1,0 +1,4 @@
+2026-04-26 16:39:12 [onnx_benchmark] INFO: Exporting ONNX model -> results/v100/artifacts/onnx/unet_backend.onnx
+2026-04-26 16:39:15 [onnx_benchmark] INFO: Creating ONNX Runtime session (device=cuda)
+2026-04-26 16:39:16 [onnx_benchmark] INFO: ONNX Runtime available providers: ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider']
+2026-04-26 16:39:16 [onnx_benchmark] INFO: Evaluating ONNX model quality...

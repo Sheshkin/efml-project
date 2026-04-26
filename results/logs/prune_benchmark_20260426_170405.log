@@ -1,0 +1,4 @@
+2026-04-26 17:04:05 [prune_benchmark] INFO: Running unstructured pruning | amount=0.50 | finetune_epochs=2
+2026-04-26 17:04:34 [prune_benchmark] INFO: Finetune epoch 1/2 | loss=0.1003
+2026-04-26 17:05:04 [prune_benchmark] INFO: Finetune epoch 2/2 | loss=0.1008
+2026-04-26 17:06:38 [prune_benchmark] INFO: Saved prune result -> results/v100/logs/prune_result.json

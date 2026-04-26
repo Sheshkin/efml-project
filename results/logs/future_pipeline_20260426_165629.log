@@ -1,0 +1,6 @@
+2026-04-26 16:56:29 [future_pipeline] INFO: [future_all] Running 'baseline'
+2026-04-26 16:58:06 [future_pipeline] INFO: [future_all] Running 'compile'
+2026-04-26 17:00:08 [future_pipeline] INFO: [future_all] Running 'backend'
+2026-04-26 17:02:04 [future_pipeline] INFO: [future_all] Running 'ptq'
+2026-04-26 17:04:02 [future_pipeline] INFO: [future_all] Running 'prune'
+2026-04-26 17:06:38 [future_pipeline] INFO: [future_all] Running 'semi24'

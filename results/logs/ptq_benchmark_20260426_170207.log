@@ -1,0 +1,6 @@
+2026-04-26 17:02:07 [ptq_benchmark] INFO: Exporting FP32 ONNX for PTQ -> results/v100/artifacts/onnx/unet_ptq_fp32.onnx
+2026-04-26 17:02:09 [ptq_benchmark] INFO: ONNX Runtime available providers: ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'AzureExecutionProvider', 'CPUExecutionProvider']
+2026-04-26 17:02:15 [ptq_benchmark] INFO: Running static PTQ quantization (QDQ + per-channel)...
+2026-04-26 17:03:59 [ptq_benchmark] WARNING: Static PTQ failed (module 'onnx' has no attribute 'mapping'). Falling back to dynamic PTQ.
+2026-04-26 17:04:02 [ptq_benchmark] INFO: Running benchmark on PTQ model -> results/v100/artifacts/onnx/unet_ptq_int8.onnx
+2026-04-26 17:04:02 [ptq_benchmark] WARNING: Skipping PTQ runtime benchmark: ONNX Runtime CUDAExecutionProvider was requested but could not be used. | requested_providers=['CUDAExecutionProvider', 'CPUExecutionProvider'] | env={'onnxruntime': '1.18.1', 'torch_cuda': '11.8', 'torch_cudnn': 8700, 'torch_cuda_available': True, 'torch_gpu': 'Tesla V100-PCIE-32GB', 'ort_available_providers': ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'AzureExecutionProvider', 'CPUExecutionProvider']} | original_error=NotImplemented: [ONNXRuntimeError] : 9 : NOT_IMPLEMENTED : Could not find an implementation for ConvInteger(10) node with name '/inc/net/net.0/Conv_quant'
